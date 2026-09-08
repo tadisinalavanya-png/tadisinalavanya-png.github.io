@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6fbf5"/>
+      <stop offset="100%" stop-color="#dcf2dd"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#65a30d"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#16a34a" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <text x="80" y="180" font-family="ui-monospace, JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#65a30d" letter-spacing="3">// AI AGENT</text>
+  <text x="80" y="285" font-family="ui-sans-serif, system-ui, sans-serif" font-size="78" font-weight="900" fill="url(#g)" letter-spacing="-2">Knowledge</text>
+  <text x="80" y="370" font-family="ui-sans-serif, system-ui, sans-serif" font-size="78" font-weight="900" fill="url(#g)" letter-spacing="-2">Assistant</text>
+  <text x="80" y="430" font-family="ui-monospace, JetBrains Mono, monospace" font-size="24" fill="#3a5a44">RAG · LangChain · Ollama</text>
+
+  <!-- Document with vector embedding dots -->
+  <g transform="translate(820, 160)" opacity="0.9">
+    <!-- Document shape -->
+    <path d="M 0 0 L 0 260 L 170 260 L 170 60 L 110 0 Z" fill="none" stroke="url(#g)" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M 110 0 L 110 60 L 170 60" fill="none" stroke="url(#g)" stroke-width="10" stroke-linejoin="round"/>
+    <!-- Document lines -->
+    <line x1="30" y1="110" x2="140" y2="110" stroke="url(#g)" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+    <line x1="30" y1="145" x2="140" y2="145" stroke="url(#g)" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+    <line x1="30" y1="180" x2="110" y2="180" stroke="url(#g)" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+    <line x1="30" y1="215" x2="130" y2="215" stroke="url(#g)" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Embedding lines from document to nodes -->
+    <line x1="170" y1="130" x2="240" y2="50" stroke="#16a34a" stroke-width="2.5" opacity="0.5" stroke-dasharray="5,4"/>
+    <line x1="170" y1="130" x2="320" y2="120" stroke="#16a34a" stroke-width="2.5" opacity="0.5" stroke-dasharray="5,4"/>
+    <line x1="170" y1="130" x2="270" y2="200" stroke="#16a34a" stroke-width="2.5" opacity="0.5" stroke-dasharray="5,4"/>
+    <line x1="170" y1="130" x2="320" y2="280" stroke="#16a34a" stroke-width="2.5" opacity="0.4" stroke-dasharray="5,4"/>
+
+    <!-- Vector nodes -->
+    <circle cx="240" cy="50" r="14" fill="#16a34a" opacity="0.9"/>
+    <circle cx="320" cy="120" r="11" fill="#65a30d" opacity="0.9"/>
+    <circle cx="270" cy="200" r="16" fill="#0d9488" opacity="0.85"/>
+    <circle cx="320" cy="280" r="10" fill="#16a34a" opacity="0.8"/>
+
+    <!-- Cross-connections between nodes -->
+    <line x1="240" y1="50" x2="320" y2="120" stroke="#65a30d" stroke-width="1.5" opacity="0.3"/>
+    <line x1="320" y1="120" x2="270" y2="200" stroke="#65a30d" stroke-width="1.5" opacity="0.3"/>
+    <line x1="270" y1="200" x2="320" y2="280" stroke="#65a30d" stroke-width="1.5" opacity="0.3"/>
+  </g>
+</svg>

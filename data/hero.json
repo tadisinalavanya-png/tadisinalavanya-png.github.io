@@ -1,0 +1,48 @@
+{
+  "eyebrow": "// business analyst",
+  "greeting": "Hi, I'm",
+  "name": "LAVANYA",
+  "surnameGradient": "TADISINA",
+  "title": "Business Analyst",
+  "rotatingSubtitles": [
+    "Business Analyst",
+    "Business Analysis",
+    "Requirements Gathering"
+  ],
+  "summary": "Business Analyst with 4+ years of experience delivering business analysis, requirements management, process optimization, and data-driven solutions across financial services and enterprise IT environments. Experienced in collaborating with business stakeholders, Product Owners, development, QA, and data engineering teams to elicit requirements, perform gap analysis, document BRDs, FRDs, user stories, use cases, and acceptance criteria, and support end-to-end SDLC delivery using Agile/Scrum methodologies. Proficient in SQL, Advanced Excel, Power BI, Tableau, JIRA, Confluence, and MS Visio for data analysis, KPI reporting, dashboard development, workflow analysis, process mapping, and business process improvement. Strong expertise in UAT coordination, data validation, root cause analysis, impact assessment, stakeholder management, and cross-functional collaboration, enabling operational efficiency, regulatory compliance, and data-driven business decisions within fast-paced enterprise environments.",
+  "avatarUrl": "",
+  "openToWork": true,
+  "cta": {
+    "buttons": [
+      {
+        "text": "View work",
+        "href": "#projects",
+        "type": "primary",
+        "external": false,
+        "icon": "fas fa-arrow-right"
+      },
+      {
+        "text": "Get in touch",
+        "href": "#contact",
+        "type": "secondary",
+        "external": false,
+        "icon": "fas fa-paper-plane"
+      },
+      {
+        "text": "Copy email",
+        "href": "#",
+        "type": "ghost",
+        "external": false,
+        "icon": "fas fa-envelope",
+        "action": "copy-email"
+      }
+    ]
+  },
+  "socialLinks": [
+    {
+      "platform": "Email",
+      "url": "mailto:tadisinalavanya@gmail.com",
+      "icon": "fas fa-envelope"
+    }
+  ]
+}

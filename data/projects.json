@@ -1,0 +1,112 @@
+{
+  "sectionTitle": "Featured Projects",
+  "projects": [
+    {
+      "title": "quasar-scrum",
+      "description": "Educational project for mastering software architecture",
+      "technologies": [
+        "Vue",
+        "JavaScript",
+        "HTML",
+        "Sass"
+      ],
+      "icon": "fas fa-globe",
+      "github": "https://github.com/tadisinalavanya-png/quasar-scrum",
+      "demo": "https://github.com/tadisinalavanya-png/quasar-scrum"
+    },
+    {
+      "title": "retail-margin-cockpit",
+      "description": "Modern web application demonstrating clean code principles",
+      "technologies": [
+        "Python",
+        "PLpgSQL",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/tadisinalavanya-png/retail-margin-cockpit",
+      "demo": "https://github.com/tadisinalavanya-png/retail-margin-cockpit"
+    },
+    {
+      "title": "field-ops-sql-cost-audit",
+      "description": "Full-featured application built as a learning exercise",
+      "technologies": [
+        "Python",
+        "Dockerfile"
+      ],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/tadisinalavanya-png/field-ops-sql-cost-audit",
+      "demo": "https://github.com/tadisinalavanya-png/field-ops-sql-cost-audit"
+    },
+    {
+      "title": "online-payments-fraud-detection-with-machine-learning",
+      "description": "Practice application demonstrating full-stack development skills",
+      "technologies": [
+        "Jupyter Notebook",
+        "HTML",
+        "Python",
+        "CSS"
+      ],
+      "icon": "fas fa-brain",
+      "github": "https://github.com/tadisinalavanya-png/online-payments-fraud-detection-with-machine-learning",
+      "demo": "https://github.com/tadisinalavanya-png/online-payments-fraud-detection-with-machine-learning"
+    },
+    {
+      "title": "etl-validation-with-python-scripting",
+      "description": "Interactive application built for continuous learning",
+      "technologies": [
+        "Python"
+      ],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/tadisinalavanya-png/etl-validation-with-python-scripting",
+      "demo": "https://github.com/tadisinalavanya-png/etl-validation-with-python-scripting"
+    },
+    {
+      "title": "user-story-best-practice",
+      "description": "Personal project for exploring modern development practices",
+      "technologies": [
+        "JavaScript",
+        "SCSS",
+        "HTML",
+        "CSS",
+        "Python",
+        "Ruby",
+        "Shell"
+      ],
+      "icon": "fas fa-brain",
+      "github": "https://github.com/tadisinalavanya-png/user-story-best-practice",
+      "demo": "https://github.com/tadisinalavanya-png/user-story-best-practice"
+    },
+    {
+      "title": "sales-insights-data-analysis-using-tableau-and-sql",
+      "description": "Portfolio project showcasing development capabilities",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/tadisinalavanya-png/sales-insights-data-analysis-using-tableau-and-sql",
+      "demo": "https://github.com/tadisinalavanya-png/sales-insights-data-analysis-using-tableau-and-sql"
+    },
+    {
+      "title": "call-center-performance-analytics-dashboard",
+      "description": "Personal project for exploring modern development practices",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/tadisinalavanya-png/call-center-performance-analytics-dashboard",
+      "demo": "https://github.com/tadisinalavanya-png/call-center-performance-analytics-dashboard"
+    },
+    {
+      "title": "sql-for-financial-data-analysis",
+      "description": "Practice repository for exploring advanced features",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/tadisinalavanya-png/sql-for-financial-data-analysis",
+      "demo": "https://github.com/tadisinalavanya-png/sql-for-financial-data-analysis"
+    },
+    {
+      "title": "financial-insights-in-banking-data-using-powerbi",
+      "description": "Modern web application demonstrating clean code principles",
+      "technologies": [],
+      "icon": "fas fa-project-diagram",
+      "github": "https://github.com/tadisinalavanya-png/financial-insights-in-banking-data-using-powerbi",
+      "demo": "https://github.com/tadisinalavanya-png/financial-insights-in-banking-data-using-powerbi"
+    }
+  ]
+}

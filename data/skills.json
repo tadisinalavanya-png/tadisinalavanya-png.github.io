@@ -1,0 +1,81 @@
+{
+  "sectionTitle": "Skills & Technologies",
+  "categories": [
+    {
+      "category": "Programming Languages",
+      "icon": "fas fa-code",
+      "skills": [
+        "SQL"
+      ]
+    },
+    {
+      "category": "Tools & Platforms",
+      "icon": "fas fa-wrench",
+      "skills": [
+        "JIRA",
+        "Confluence",
+        "MS Visio",
+        "Balsamiq",
+        "Trello",
+        "MS Project",
+        "SQL Server",
+        "MySQL",
+        "Oracle",
+        "Power BI",
+        "Tableau",
+        "Advanced Excel",
+        "AWS",
+        "Microsoft Azure"
+      ]
+    },
+    {
+      "category": "Technical Skills",
+      "icon": "fas fa-laptop-code",
+      "skills": [
+        "Business Analysis",
+        "Requirements Gathering",
+        "Requirements Elicitation",
+        "Requirement Analysis",
+        "Stakeholder Management",
+        "Business Process Analysis",
+        "Gap Analysis",
+        "Process Improvement",
+        "Workflow Analysis",
+        "Business Process Modeling",
+        "As-Is/To-Be Analysis",
+        "BRD",
+        "FRD",
+        "User Stories",
+        "Use Cases",
+        "Acceptance Criteria",
+        "Functional Specifications",
+        "Process Flow Diagrams",
+        "Requirement Traceability Matrix (RTM)",
+        "UAT Documentation",
+        "Data Analysis",
+        "Data Mapping",
+        "Root Cause Analysis",
+        "Data Visualization",
+        "Dashboard Development",
+        "KPI Reporting",
+        "Data Validation",
+        "Agile",
+        "Scrum",
+        "Waterfall",
+        "SDLC",
+        "Sprint Planning",
+        "Backlog Grooming",
+        "Sprint Reviews",
+        "Change Management",
+        "Risk Analysis",
+        "Cross-functional Collaboration",
+        "Communication",
+        "Analytical Thinking",
+        "Problem Solving",
+        "Decision Making",
+        "Stakeholder Communication",
+        "Time Management"
+      ]
+    }
+  ]
+}

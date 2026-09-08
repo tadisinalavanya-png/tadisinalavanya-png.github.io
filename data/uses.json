@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "label": "Languages",
+      "value": "SQL",
+      "icon": "fas fa-code"
+    },
+    {
+      "label": "Tools",
+      "value": "JIRA, Confluence, MS Visio",
+      "icon": "fas fa-wrench"
+    },
+    {
+      "label": "Focus",
+      "value": "Business Analysis, Requirements Gathering",
+      "icon": "fas fa-laptop-code"
+    }
+  ]
+}

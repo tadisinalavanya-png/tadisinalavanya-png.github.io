@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>404 — Sofia Alvarez</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              bg: '#f6fbf5',
+              surface: '#ffffff',
+              'text-hi': '#0a2e16',
+              'text-mid': '#3a5a44',
+              'text-lo': '#6b8474',
+              'accent-1': '#16a34a',
+              'accent-2': '#65a30d',
+              'accent-3': '#0d9488',
+            },
+            backgroundImage: { 'accent-grad': 'linear-gradient(90deg, #16a34a 0%, #65a30d 100%)' },
+            animation: {
+              'mesh-drift-1': 'meshDrift1 30s ease-in-out infinite',
+              'mesh-drift-2': 'meshDrift2 38s ease-in-out infinite',
+            },
+            keyframes: {
+              meshDrift1: { '0%,100%': { transform: 'translate3d(-10%,-10%,0) scale(1)' }, '50%': { transform: 'translate3d(10%,5%,0) scale(1.15)' } },
+              meshDrift2: { '0%,100%': { transform: 'translate3d(20%,10%,0) scale(1.1)' }, '50%': { transform: 'translate3d(-15%,-5%,0) scale(1)' } },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="relative grid min-h-screen place-items-center bg-bg text-text-hi font-sans">
+    <div class="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
+      <div class="absolute top-[-20%] left-[-10%] h-[60vmax] w-[60vmax] rounded-full opacity-30 blur-3xl animate-mesh-drift-1"
+           style="background: radial-gradient(closest-side, #16a34a, transparent 70%);"></div>
+      <div class="absolute bottom-[-30%] right-[-10%] h-[55vmax] w-[55vmax] rounded-full opacity-25 blur-3xl animate-mesh-drift-2"
+           style="background: radial-gradient(closest-side, #65a30d, transparent 70%);"></div>
+      <div class="absolute inset-0 dot-grid"></div>
+    </div>
+
+    <main class="mx-auto max-w-md p-8 text-center">
+      <p class="font-mono text-xs uppercase tracking-widest" style="color:#65a30d;">// route not found</p>
+      <h1 class="mt-3 text-6xl font-extrabold tracking-tight" style="background:linear-gradient(90deg,#16a34a,#65a30d);-webkit-background-clip:text;background-clip:text;color:transparent;">
+        404
+      </h1>
+      <p class="mt-3 text-text-mid">This path doesn't exist — but plenty of others do.</p>
+      <a href="/" class="mt-8 inline-flex items-center gap-2 rounded-md bg-accent-grad px-4 py-2.5 text-sm font-semibold text-bg hover:opacity-90 transition">
+        Back home <i class="fas fa-arrow-right"></i>
+      </a>
+    </main>
+  </body>
+</html>

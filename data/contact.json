@@ -1,0 +1,54 @@
+{
+  "sectionTitle": "Get In Touch",
+  "contactInfo": [
+    {
+      "type": "email",
+      "icon": "fas fa-envelope",
+      "label": "Email",
+      "value": "tadisinalavanya@gmail.com",
+      "href": "mailto:tadisinalavanya@gmail.com"
+    },
+    {
+      "type": "phone",
+      "icon": "fas fa-phone",
+      "label": "Phone",
+      "value": "+1 (414) 999-7811",
+      "href": "tel:14149997811"
+    },
+    {
+      "type": "location",
+      "icon": "fas fa-map-marker-alt",
+      "label": "Location",
+      "value": "IL, USA",
+      "href": null
+    }
+  ],
+  "form": {
+    "fields": [
+      {
+        "id": "name",
+        "type": "text",
+        "placeholder": "Your Name",
+        "required": true
+      },
+      {
+        "id": "email",
+        "type": "email",
+        "placeholder": "Your Email",
+        "required": true
+      },
+      {
+        "id": "message",
+        "type": "textarea",
+        "placeholder": "Your Message",
+        "rows": 5,
+        "required": true
+      }
+    ],
+    "submitButton": {
+      "text": "Send Message",
+      "type": "primary"
+    },
+    "successMessage": "Thank you for your message!"
+  }
+}

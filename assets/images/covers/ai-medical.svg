@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6fbf5"/>
+      <stop offset="100%" stop-color="#dcf2dd"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#65a30d"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#16a34a" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <text x="80" y="180" font-family="ui-monospace, JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#65a30d" letter-spacing="3">// MULTI-AGENT AI</text>
+  <text x="80" y="285" font-family="ui-sans-serif, system-ui, sans-serif" font-size="78" font-weight="900" fill="url(#g)" letter-spacing="-2">Medical</text>
+  <text x="80" y="370" font-family="ui-sans-serif, system-ui, sans-serif" font-size="78" font-weight="900" fill="url(#g)" letter-spacing="-2">Diagnostics</text>
+  <text x="80" y="430" font-family="ui-monospace, JetBrains Mono, monospace" font-size="24" fill="#3a5a44">GPT-4o · multi-agent · Kubernetes</text>
+
+  <!-- Multi-agent network with central orchestrator -->
+  <g transform="translate(900, 315)" opacity="0.9">
+    <!-- Outer agent nodes -->
+    <circle cx="-110" cy="-100" r="32" fill="none" stroke="url(#g)" stroke-width="7"/>
+    <circle cx="110" cy="-100" r="32" fill="none" stroke="url(#g)" stroke-width="7"/>
+    <circle cx="-110" cy="100" r="32" fill="none" stroke="url(#g)" stroke-width="7"/>
+    <circle cx="110" cy="100" r="32" fill="none" stroke="url(#g)" stroke-width="7"/>
+
+    <!-- Agent labels -->
+    <text x="-110" y="-96" font-family="ui-monospace, monospace" font-size="12" fill="#16a34a" text-anchor="middle" font-weight="700">DX</text>
+    <text x="110" y="-96" font-family="ui-monospace, monospace" font-size="12" fill="#16a34a" text-anchor="middle" font-weight="700">RX</text>
+    <text x="-110" y="104" font-family="ui-monospace, monospace" font-size="12" fill="#16a34a" text-anchor="middle" font-weight="700">LAB</text>
+    <text x="110" y="104" font-family="ui-monospace, monospace" font-size="12" fill="#16a34a" text-anchor="middle" font-weight="700">IMG</text>
+
+    <!-- Connector lines from agents to center -->
+    <line x1="-83" y1="-75" x2="-28" y2="-28" stroke="#16a34a" stroke-width="3" stroke-dasharray="7,5" opacity="0.7"/>
+    <line x1="83" y1="-75" x2="28" y2="-28" stroke="#16a34a" stroke-width="3" stroke-dasharray="7,5" opacity="0.7"/>
+    <line x1="-83" y1="75" x2="-28" y2="28" stroke="#16a34a" stroke-width="3" stroke-dasharray="7,5" opacity="0.7"/>
+    <line x1="83" y1="75" x2="28" y2="28" stroke="#16a34a" stroke-width="3" stroke-dasharray="7,5" opacity="0.7"/>
+
+    <!-- Central orchestrator -->
+    <circle cx="0" cy="0" r="44" fill="url(#g)" opacity="0.95"/>
+    <!-- Cross / plus symbol for medical -->
+    <line x1="-18" y1="0" x2="18" y2="0" stroke="white" stroke-width="8" stroke-linecap="round"/>
+    <line x1="0" y1="-18" x2="0" y2="18" stroke="white" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- GPT-4o label on center -->
+    <text x="0" y="66" font-family="ui-monospace, monospace" font-size="14" fill="#16a34a" text-anchor="middle" font-weight="700">GPT-4o</text>
+  </g>
+</svg>

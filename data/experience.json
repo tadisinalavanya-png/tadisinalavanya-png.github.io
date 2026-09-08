@@ -1,0 +1,40 @@
+{
+  "sectionTitle": "Professional Experience",
+  "experiences": [
+    {
+      "title": "Business Analyst",
+      "company": "Capital One Financial",
+      "period": "Jan 2025 – Present",
+      "location": "",
+      "logoDomain": "",
+      "description": "",
+      "responsibilities": [
+        "Led requirements elicitation workshops with business stakeholders to gather, analyse, and prioritize business requirements, translating them into BRDs, FRDs, user stories, use cases, and acceptance criteria that reduced scope ambiguity by 30%",
+        "Performed business and data analysis on high-volume credit card transaction data using SQL, Power BI, and Excel to identify fraud trends, uncover business insights, and improve fraud detection effectiveness by 22%",
+        "Evaluated existing business processes through gap analysis, impact assessment, and workflow analysis to evaluate existing business processes, recommending process improvements that reduced manual customer onboarding efforts by 15%",
+        "Collaborated with Product Owners, development, QA, and data engineering teams throughout the Agile SDLC, managing backlog refinement, sprint planning, requirement prioritization, and change requests to improve on-time sprint delivery by 18%",
+        "Prepared and maintained business documentation, including BRDs, FRDs, process flow diagrams, functional specifications, and requirement traceability, ensuring alignment between business objectives and technical implementation",
+        "Executed data validation, data reconciliation, ETL verification, and reporting validation for executive dashboards, maintaining 99% data accuracy and improving confidence in business reporting and KPI monitoring",
+        "Coordinated User Acceptance Testing (UAT) by preparing test scenarios, validating functional requirements, tracking defects in JIRA, supporting defect triage, and ensuring successful production releases by resolving 40+ issues before deployment",
+        "Developed Power BI dashboards, executive reports, and KPI scorecards, presenting analytical findings and business recommendations to senior leadership to support customer retention strategies, operational improvements, and data-driven decision-making"
+      ]
+    },
+    {
+      "title": "Business Systems Analyst",
+      "company": "Hexaware Technologies",
+      "period": "Jun 2020 – Sep 2023",
+      "location": "",
+      "logoDomain": "",
+      "description": "",
+      "responsibilities": [
+        "Gathered, analysed, and documented business requirements through stakeholder workshops, translating them into BRDs, FRDs, user stories, use cases, and acceptance criteria to support Agile delivery across 3 concurrent enterprise projects",
+        "Performed gap analysis, impact analysis, and business process analysis during enterprise system enhancement and data migration initiatives, identifying process improvement opportunities that reduced post-migration defects by 25%",
+        "Collaborated with business users, developers, QA, and database teams to support end-to-end SDLC activities, including requirement clarification, backlog refinement, sprint planning, and release readiness",
+        "Executed SQL-based data validation, data reconciliation, and data quality analysis during system integration and reporting activities, improving reporting reliability and business data accuracy by 20%",
+        "Developed Tableau dashboards, Excel reports, and KPI dashboards to monitor operational performance, project metrics, and business outcomes, enabling stakeholders to make informed decisions",
+        "Created process flow diagrams, workflow documentation, functional specifications, and business process models using MS Visio, streamlining approval workflows and reducing turnaround time by 35%",
+        "Supported User Acceptance Testing (UAT) by preparing test scenarios, test cases, validating business requirements, coordinating defect resolution with QA and development teams, and reducing post-production defects by 28%"
+      ]
+    }
+  ]
+}

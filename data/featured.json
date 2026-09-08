@@ -1,0 +1,92 @@
+{
+  "sectionTitle": "Featured Projects",
+  "items": [
+    {
+      "title": "quasar-scrum",
+      "tagline": "Vue · JavaScript · HTML",
+      "description": "Educational project for mastering software architecture",
+      "coverUrl": "",
+      "stack": [
+        "Vue",
+        "JavaScript",
+        "HTML",
+        "Sass"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/quasar-scrum",
+      "demo": "",
+      "accent": "violet"
+    },
+    {
+      "title": "retail-margin-cockpit",
+      "tagline": "Python · PLpgSQL · Dockerfile",
+      "description": "Modern web application demonstrating clean code principles",
+      "coverUrl": "",
+      "stack": [
+        "Python",
+        "PLpgSQL",
+        "Dockerfile"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/retail-margin-cockpit",
+      "demo": "",
+      "accent": "cyan"
+    },
+    {
+      "title": "field-ops-sql-cost-audit",
+      "tagline": "Python · Dockerfile",
+      "description": "Full-featured application built as a learning exercise",
+      "coverUrl": "",
+      "stack": [
+        "Python",
+        "Dockerfile"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/field-ops-sql-cost-audit",
+      "demo": "",
+      "accent": "fuchsia"
+    },
+    {
+      "title": "online-payments-fraud-detection-with-machine-learning",
+      "tagline": "Jupyter Notebook · HTML · Python",
+      "description": "Practice application demonstrating full-stack development skills",
+      "coverUrl": "",
+      "stack": [
+        "Jupyter Notebook",
+        "HTML",
+        "Python",
+        "CSS"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/online-payments-fraud-detection-with-machine-learning",
+      "demo": "",
+      "accent": "violet"
+    },
+    {
+      "title": "etl-validation-with-python-scripting",
+      "tagline": "Python",
+      "description": "Interactive application built for continuous learning",
+      "coverUrl": "",
+      "stack": [
+        "Python"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/etl-validation-with-python-scripting",
+      "demo": "",
+      "accent": "cyan"
+    },
+    {
+      "title": "user-story-best-practice",
+      "tagline": "JavaScript · SCSS · HTML",
+      "description": "Personal project for exploring modern development practices",
+      "coverUrl": "",
+      "stack": [
+        "JavaScript",
+        "SCSS",
+        "HTML",
+        "CSS",
+        "Python",
+        "Ruby",
+        "Shell"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/user-story-best-practice",
+      "demo": "",
+      "accent": "fuchsia"
+    }
+  ]
+}

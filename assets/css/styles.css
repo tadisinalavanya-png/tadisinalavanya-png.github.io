@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Global resets and layers that Tailwind can't express idiomatically
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #f6fbf5;
+}
+
+body {
+  background-color: #f6fbf5;
+  color: #0a2e16;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(22, 163, 74, 0.25);
+  color: #0a2e16;
+}
+
+/* Dot grid mask used behind the hero mesh */
+.dot-grid {
+  background-image: radial-gradient(rgba(15, 64, 24, 0.10) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+}
+
+/* Hairline border helper used by glass surfaces */
+.hairline {
+  border: 1px solid rgba(15, 64, 24, 0.10);
+}
+
+/* Gradient text used for accent words */
+.gradient-text {
+  background: linear-gradient(90deg, #16a34a 0%, #65a30d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Scroll-reveal: starts invisible, JS adds .in-view */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: none;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}

@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="JSON-driven portfolio website." />
+    <meta name="author" content="Portfolio" />
+    <meta name="keywords" content="Portfolio" />
+    <meta name="theme-color" content="#f6fbf5" />
+    <title>Portfolio</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="Software Engineer building distributed systems, AI agents, and backend services." />
+    <meta property="og:url" content="https://example.github.io/" />
+    <meta property="og:image" content="assets/images/og.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Portfolio" />
+    <meta name="twitter:description" content="Software Engineer building distributed systems, AI agents, and backend services." />
+    <meta name="twitter:image" content="assets/images/og.svg" />
+
+    <!-- JSON-LD Person schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Portfolio",
+        "jobTitle": "Software Engineer",
+        "url": "https://example.github.io/",
+        "sameAs": [
+          "https://github.com/",
+          "https://linkedin.com/"
+        ],
+        "email": "mailto:sofia.alvarez@example.com"
+      }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              bg: '#f6fbf5',
+              surface: '#ffffff',
+              'surface-2': '#ecfaee',
+              border: 'rgba(15, 64, 24, 0.10)',
+              'text-hi': '#0a2e16',
+              'text-mid': '#3a5a44',
+              'text-lo': '#6b8474',
+              'accent-1': '#16a34a',
+              'accent-2': '#65a30d',
+              'accent-3': '#0d9488',
+            },
+            fontFamily: {
+              sans: ['ui-sans-serif', 'system-ui', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+              mono: ['ui-monospace', 'JetBrains Mono', 'Menlo', 'Consolas', 'monospace'],
+            },
+            fontSize: {
+              display: ['clamp(2.75rem, 6vw, 5.25rem)', { lineHeight: '1.05', letterSpacing: '-0.02em' }],
+              h2: ['clamp(2rem, 3.5vw, 2.75rem)', { lineHeight: '1.15', letterSpacing: '-0.01em' }],
+              eyebrow: ['0.75rem', { letterSpacing: '0.18em' }],
+            },
+            backgroundImage: {
+              'accent-grad': 'linear-gradient(90deg, #16a34a 0%, #65a30d 100%)',
+            },
+            animation: {
+              'mesh-drift-1': 'meshDrift1 30s ease-in-out infinite',
+              'mesh-drift-2': 'meshDrift2 38s ease-in-out infinite',
+              'mesh-drift-3': 'meshDrift3 44s ease-in-out infinite',
+              marquee: 'marquee 40s linear infinite',
+              'marquee-reverse': 'marqueeReverse 50s linear infinite',
+            },
+            keyframes: {
+              meshDrift1: {
+                '0%, 100%': { transform: 'translate3d(-10%, -10%, 0) scale(1)' },
+                '50%': { transform: 'translate3d(10%, 5%, 0) scale(1.15)' },
+              },
+              meshDrift2: {
+                '0%, 100%': { transform: 'translate3d(20%, 10%, 0) scale(1.1)' },
+                '50%': { transform: 'translate3d(-15%, -5%, 0) scale(1)' },
+              },
+              meshDrift3: {
+                '0%, 100%': { transform: 'translate3d(0, 20%, 0) scale(1)' },
+                '50%': { transform: 'translate3d(5%, -10%, 0) scale(1.2)' },
+              },
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              marqueeReverse: {
+                '0%': { transform: 'translateX(-50%)' },
+                '100%': { transform: 'translateX(0)' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans bg-bg text-text-hi antialiased">
+    <!-- Scroll progress -->
+    <div class="fixed inset-x-0 top-0 z-[60] h-[2px] origin-left bg-accent-grad"
+         id="scroll-progress" style="transform: scaleX(0);"></div>
+
+    <!-- Gradient mesh background container (mounted by JS) -->
+    <div id="gradient-mesh" class="fixed inset-0 -z-10"></div>
+
+    <!-- Skip link for a11y -->
+    <a href="#home" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[70] focus:rounded-md focus:bg-surface focus:px-3 focus:py-2 focus:text-text-hi focus:hairline">
+      Skip to content
+    </a>
+
+    <!-- Navigation (rebuilt in Task 5) -->
+    <nav class="fixed top-0 left-0 right-0 z-50 hairline backdrop-blur-xl" id="navbar"
+         style="background-color: rgba(246,251,245,0.85);">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
+        <a href="#home" class="text-lg font-extrabold gradient-text">GR</a>
+        <ul class="hidden md:flex gap-6 text-sm text-text-mid" id="navMenu"></ul>
+        <button class="hidden md:flex items-center gap-1.5 rounded-md hairline px-2.5 py-1 text-xs text-text-mid hover:text-text-hi transition"
+                id="cmdkBtn" aria-label="Open command palette">
+          <span class="font-mono">⌘</span><span>K</span>
+        </button>
+        <button class="md:hidden text-text-mid" id="navToggle" aria-label="Open menu">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+
+    <!-- Hero -->
+    <section id="home" class="relative min-h-screen pt-28 pb-20">
+      <div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-4 md:grid-cols-12">
+        <!-- Copy -->
+        <div class="md:col-span-7 reveal">
+          <p class="font-mono text-eyebrow uppercase text-accent-2" id="heroEyebrow"></p>
+          <h1 class="mt-4 font-extrabold tracking-tight text-display">
+            <span id="heroName"></span>
+            <span class="gradient-text" id="heroSurname"></span>
+          </h1>
+          <p class="mt-4 text-2xl text-text-mid">
+            <span class="font-mono text-accent-2">&gt;</span>
+            <span id="heroRotator" class="text-text-hi">&nbsp;</span><span class="text-accent-2 animate-pulse">_</span>
+          </p>
+          <p class="mt-6 max-w-xl text-base leading-relaxed text-text-mid" id="heroSummary"></p>
+          <div class="mt-8 flex flex-wrap items-center gap-3" id="heroCTA"></div>
+          <div class="mt-6 flex items-center gap-3" id="heroSocial"></div>
+        </div>
+
+        <!-- Avatar card -->
+        <div class="md:col-span-5 reveal">
+          <div class="relative mx-auto w-fit">
+            <div class="absolute -inset-1 rounded-3xl bg-accent-grad opacity-60 blur-md"></div>
+            <div class="relative overflow-hidden rounded-3xl hairline bg-surface p-2">
+              <img id="heroAvatar" alt="Portfolio portrait"
+                   class="block h-80 w-80 rounded-2xl object-cover md:h-96 md:w-96" />
+            </div>
+            <div id="openToWorkBadge"
+                 class="absolute -bottom-3 left-1/2 hidden -translate-x-1/2 items-center gap-2 rounded-full hairline bg-surface px-4 py-1.5 text-xs text-text-hi shadow-lg"
+                 style="background-color: rgba(255,255,255,0.9);">
+              <span class="inline-block h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Open to work
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Toast slot (used by copy-email) -->
+      <div id="toastRoot" class="fixed bottom-6 left-1/2 z-[80] -translate-x-1/2"></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="relative py-24">
+      <div class="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-4 md:grid-cols-12">
+        <div class="md:col-span-7 reveal">
+          <p class="font-mono text-eyebrow uppercase text-accent-2">// about</p>
+          <h2 class="mt-3 text-h2 font-extrabold">A brief introduction.</h2>
+          <div class="mt-6 space-y-4 text-text-mid" id="aboutText"></div>
+        </div>
+        <aside class="md:col-span-5 space-y-4 reveal">
+          <div class="rounded-2xl hairline bg-surface/60 backdrop-blur p-5">
+            <p class="font-mono text-eyebrow uppercase text-accent-2">currently</p>
+            <p class="mt-2 text-text-hi" id="aboutCurrently"></p>
+          </div>
+          <div class="rounded-2xl hairline bg-surface/60 backdrop-blur p-5">
+            <p class="font-mono text-eyebrow uppercase text-accent-2">/uses</p>
+            <ul class="mt-3 space-y-2 text-sm" id="usesList"></ul>
+          </div>
+          <div class="grid grid-cols-3 gap-3" id="aboutStats"></div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Tech Stack Marquee -->
+    <section id="stack" class="relative py-16">
+      <div class="mx-auto max-w-6xl px-4 reveal">
+        <p class="font-mono text-eyebrow uppercase text-center text-accent-2">// the toolbelt</p>
+        <h2 class="mt-3 text-h2 font-extrabold text-center">Tech I reach for.</h2>
+        <div id="stackMarquee" class="mt-10"></div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="relative py-24">
+      <div class="mx-auto max-w-4xl px-4">
+        <div class="reveal">
+          <p class="font-mono text-eyebrow uppercase text-accent-2">// experience</p>
+          <h2 class="mt-3 text-h2 font-extrabold">Where I've shipped.</h2>
+        </div>
+        <ol id="experienceTimeline" class="mt-10 relative border-l border-white/10 pl-8 space-y-10"></ol>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title"></h2>
+        <div class="skills-grid" id="skillsGrid">
+          <!-- Skills will be loaded dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="relative py-24">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="reveal">
+          <p class="font-mono text-eyebrow uppercase text-accent-2">// featured projects</p>
+          <h2 class="mt-3 text-h2 font-extrabold">Shipped, measured, in production.</h2>
+        </div>
+        <div id="featuredGrid" class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2"></div>
+      </div>
+    </section>
+
+    <!-- Education + Certifications -->
+    <section id="education" class="relative py-24">
+      <div class="mx-auto grid max-w-6xl grid-cols-1 gap-10 px-4 md:grid-cols-2">
+        <div class="reveal">
+          <p class="font-mono text-eyebrow uppercase text-accent-2">// education</p>
+          <h2 class="mt-3 text-h2 font-extrabold">Degrees.</h2>
+          <ul id="educationList" class="mt-6 space-y-4"></ul>
+        </div>
+        <div class="reveal">
+          <p class="font-mono text-eyebrow uppercase text-accent-2">// certifications</p>
+          <h2 class="mt-3 text-h2 font-extrabold">Receipts.</h2>
+          <div id="certGrid" class="mt-6 flex flex-wrap gap-2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="relative py-24">
+      <div class="mx-auto max-w-3xl px-4 text-center reveal">
+        <p class="font-mono text-eyebrow uppercase text-accent-2">// reach out</p>
+        <h2 class="mt-3 text-h2 font-extrabold">Let's build something.</h2>
+        <p class="mt-4 text-text-mid">
+          Drop a line about distributed systems, AI-agent work, or backend roles — I read everything.
+        </p>
+        <div class="mt-8 inline-flex items-center gap-2 rounded-full hairline bg-surface/60 px-4 py-2 font-mono text-sm backdrop-blur">
+          <i class="fas fa-envelope text-accent-2"></i>
+          <span id="contactEmail">sofia.alvarez@example.com</span>
+          <button data-action="copy-email"
+                  class="ml-2 rounded-md hairline px-2 py-1 text-xs text-text-mid hover:text-text-hi transition"
+                  aria-label="Copy email to clipboard">
+            <i class="fas fa-copy"></i>
+            <span>Copy</span>
+          </button>
+        </div>
+        <div class="mt-6 flex justify-center gap-3" id="contactSocial"></div>
+      </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="relative border-t hairline py-10">
+      <div class="mx-auto flex max-w-6xl flex-col items-center gap-3 px-4 text-sm text-text-lo md:flex-row md:justify-between">
+        <p>© <span id="footerYear"></span> <span id="footerName">Portfolio</span></p>
+        <p class="font-mono">built with Tailwind + ☕ · last deployed <span id="footerDeployed"></span></p>
+      </div>
+    </footer>
+
+    <script type="module">
+      import { mountGradientMesh } from './assets/js/lib/gradient-mesh.js';
+      import { mountScrollProgress } from './assets/js/lib/scroll-progress.js';
+      import { mountScrollReveal } from './assets/js/lib/scroll-reveal.js';
+      mountGradientMesh();
+      mountScrollProgress();
+      mountScrollReveal();
+    </script>
+    <!-- Command Palette Modal -->
+    <div id="cmdkRoot"
+         class="fixed inset-0 z-[90] hidden items-start justify-center p-4 pt-[15vh]"
+         style="background-color: rgba(246,251,245,0.85); backdrop-filter: blur(8px);"
+         role="dialog" aria-modal="true" aria-label="Command palette">
+      <div class="w-full max-w-lg rounded-xl hairline bg-surface shadow-2xl">
+        <div class="flex items-center gap-2 border-b border-white/[0.06] px-3 py-2">
+          <i class="fas fa-magnifying-glass text-text-lo"></i>
+          <input id="cmdkInput" type="text" placeholder="Type to search…"
+                 class="w-full bg-transparent py-1.5 text-text-hi placeholder:text-text-lo focus:outline-none" />
+          <span class="font-mono text-[10px] text-text-lo">esc</span>
+        </div>
+        <ul id="cmdkList" class="max-h-80 overflow-y-auto p-2 space-y-1"></ul>
+      </div>
+    </div>
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
+</html>

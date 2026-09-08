@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6fbf5"/>
+      <stop offset="100%" stop-color="#dcf2dd"/>
+    </linearGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#16a34a"/>
+      <stop offset="100%" stop-color="#65a30d"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="#16a34a" opacity="0.12"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <text x="80" y="180" font-family="ui-monospace, JetBrains Mono, monospace" font-size="20" font-weight="700" fill="#65a30d" letter-spacing="3">// DISTRIBUTED SYSTEM</text>
+  <text x="80" y="295" font-family="ui-sans-serif, system-ui, sans-serif" font-size="92" font-weight="900" fill="url(#g)" letter-spacing="-2">URL Shortener</text>
+  <text x="80" y="355" font-family="ui-monospace, JetBrains Mono, monospace" font-size="24" fill="#3a5a44">Spring Boot · Redis · 10K req/min</text>
+
+  <!-- Link chain illustration -->
+  <g transform="translate(820, 380)" opacity="0.95">
+    <!-- Left link ring -->
+    <rect x="-160" y="-45" width="160" height="90" rx="45" fill="none" stroke="url(#g)" stroke-width="16"/>
+    <!-- Right link ring -->
+    <rect x="60" y="-45" width="160" height="90" rx="45" fill="none" stroke="url(#g)" stroke-width="16"/>
+    <!-- Chain overlap mask - white fill to create interlock effect -->
+    <rect x="60" y="-46" width="40" height="92" fill="#e8f5e9"/>
+    <rect x="60" y="-30" width="40" height="60" fill="none" stroke="url(#g)" stroke-width="16" stroke-dasharray="60 200"/>
+    <!-- Arrow from chain to short link -->
+    <line x1="260" y1="0" x2="340" y2="0" stroke="#65a30d" stroke-width="8" stroke-linecap="round"/>
+    <polyline points="326,-14 340,0 326,14" fill="none" stroke="#65a30d" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Short URL box -->
+    <rect x="360" y="-34" width="120" height="68" rx="20" fill="none" stroke="url(#g)" stroke-width="8"/>
+    <text x="420" y="8" font-family="ui-monospace, monospace" font-size="22" font-weight="700" fill="#16a34a" text-anchor="middle">s.io/x</text>
+  </g>
+
+  <!-- Redis cache indicator -->
+  <g transform="translate(820, 520)" opacity="0.7">
+    <rect x="-160" y="-22" width="130" height="44" rx="8" fill="none" stroke="#16a34a" stroke-width="3" stroke-dasharray="6,3"/>
+    <text x="-95" y="5" font-family="ui-monospace, monospace" font-size="16" fill="#16a34a" text-anchor="middle">Redis Cache</text>
+    <rect x="0" y="-22" width="130" height="44" rx="8" fill="none" stroke="#65a30d" stroke-width="3" stroke-dasharray="6,3"/>
+    <text x="65" y="5" font-family="ui-monospace, monospace" font-size="16" fill="#65a30d" text-anchor="middle">MySQL Store</text>
+  </g>
+</svg>
