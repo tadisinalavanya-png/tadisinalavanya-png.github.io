@@ -3,20 +3,22 @@
   "certificationsTitle": "Certifications",
   "education": [
     {
-      "degree": "Master of Computer and information systems in Computer and information systems",
+      "degree": "Master of Science, Computer and Information Systems",
       "school": "Concordia University Wisconsin (CUW)",
       "institution": "Concordia University Wisconsin (CUW)",
       "period": "Oct 2023 – Dec 2025",
       "details": "",
-      "description": ""
+      "description": "",
+      "logo": "assets/images/logos/cuw.png"
     },
     {
-      "degree": "Bachelor of Computer Science in Computer Science",
+      "degree": "Bachelor of Technology, Computer Science",
       "school": "Vignan institute of technology and science, Telangana",
       "institution": "Vignan institute of technology and science, Telangana",
       "period": "Jun 2016 – May 2020",
       "details": "",
-      "description": ""
+      "description": "",
+      "logo": "assets/images/logos/vignan.png"
     }
   ],
   "certifications": []

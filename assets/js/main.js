@@ -176,14 +176,19 @@ function companyInitials(name) {
 }
 
 function companyMarkHTML(e) {
-  const initials = companyInitials(e.company);
-  if (e.logoDomain) {
-    return `<div class="company-logo grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-md hairline bg-white" data-initials="${initials}">
-      <img src="https://logo.clearbit.com/${e.logoDomain}?size=80" alt="${e.company} logo"
-           class="h-full w-full object-contain p-1.5" />
-    </div>`;
+  const name = e.company ?? e.school ?? e.institution ?? '';
+  const initials = companyInitials(name);
+  if (!e.logo) {
+    return `<div class="grid h-10 w-10 shrink-0 place-items-center rounded-md hairline bg-white text-xs font-mono font-bold text-text-mid">${initials}</div>`;
   }
-  return `<div class="grid h-10 w-10 shrink-0 place-items-center rounded-md hairline bg-white text-xs font-mono font-bold text-text-mid">${initials}</div>`;
+  // Logos ship with the repo: the Clearbit logo API this template relied on was retired.
+  // The initials sit underneath, so a missing file degrades to the same mark as no logo.
+  return `<div class="relative grid h-10 w-10 shrink-0 place-items-center overflow-hidden rounded-md hairline bg-white">
+      <span class="absolute inset-0 grid place-items-center text-xs font-mono font-bold text-text-mid">${initials}</span>
+      <img src="${e.logo}" alt="${name} logo" decoding="async"
+           class="relative h-full w-full bg-white object-contain p-1.5"
+           onerror="this.remove()" />
+    </div>`;
 }
 
 export function renderExperience(experience) {
@@ -236,11 +241,16 @@ export function renderEducation(education) {
     .map(
       (e) => `
       <li class="rounded-xl hairline bg-surface/60 backdrop-blur p-5">
-        <div class="flex flex-wrap items-baseline justify-between gap-2">
-          <h3 class="font-bold text-text-hi">${e.degree ?? e.title ?? ''}</h3>
-          <span class="font-mono text-xs text-text-lo">${e.period ?? ''}</span>
+        <div class="flex items-start gap-4">
+          ${companyMarkHTML(e)}
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 class="font-bold text-text-hi">${e.degree ?? e.title ?? ''}</h3>
+              <span class="font-mono text-xs text-text-lo">${e.period ?? ''}</span>
+            </div>
+            <p class="mt-1 text-sm text-accent-2">${e.school ?? e.institution ?? ''}</p>
+          </div>
         </div>
-        <p class="mt-1 text-sm text-accent-2">${e.school ?? e.institution ?? ''}</p>
       </li>`,
     )
     .join('');

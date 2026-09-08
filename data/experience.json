@@ -6,7 +6,6 @@
       "company": "Capital One Financial",
       "period": "Jan 2025 – Present",
       "location": "",
-      "logoDomain": "",
       "description": "",
       "responsibilities": [
         "Led requirements elicitation workshops with business stakeholders to gather, analyse, and prioritize business requirements, translating them into BRDs, FRDs, user stories, use cases, and acceptance criteria that reduced scope ambiguity by 30%",
@@ -17,14 +16,14 @@
         "Executed data validation, data reconciliation, ETL verification, and reporting validation for executive dashboards, maintaining 99% data accuracy and improving confidence in business reporting and KPI monitoring",
         "Coordinated User Acceptance Testing (UAT) by preparing test scenarios, validating functional requirements, tracking defects in JIRA, supporting defect triage, and ensuring successful production releases by resolving 40+ issues before deployment",
         "Developed Power BI dashboards, executive reports, and KPI scorecards, presenting analytical findings and business recommendations to senior leadership to support customer retention strategies, operational improvements, and data-driven decision-making"
-      ]
+      ],
+      "logo": "assets/images/logos/capitalone.png"
     },
     {
       "title": "Business Systems Analyst",
       "company": "Hexaware Technologies",
       "period": "Jun 2020 – Sep 2023",
       "location": "",
-      "logoDomain": "",
       "description": "",
       "responsibilities": [
         "Gathered, analysed, and documented business requirements through stakeholder workshops, translating them into BRDs, FRDs, user stories, use cases, and acceptance criteria to support Agile delivery across 3 concurrent enterprise projects",
@@ -34,7 +33,8 @@
         "Developed Tableau dashboards, Excel reports, and KPI dashboards to monitor operational performance, project metrics, and business outcomes, enabling stakeholders to make informed decisions",
         "Created process flow diagrams, workflow documentation, functional specifications, and business process models using MS Visio, streamlining approval workflows and reducing turnaround time by 35%",
         "Supported User Acceptance Testing (UAT) by preparing test scenarios, test cases, validating business requirements, coordinating defect resolution with QA and development teams, and reducing post-production defects by 28%"
-      ]
+      ],
+      "logo": "assets/images/logos/hexaware.png"
     }
   ]
 }
