@@ -235,7 +235,6 @@ export function renderExperience(experience) {
 
 export function renderEducation(education) {
   const eduItems = education.education ?? education.items ?? education ?? [];
-  const certItems = education.certifications ?? [];
 
   $('#educationList').innerHTML = eduItems
     .map(
@@ -252,14 +251,6 @@ export function renderEducation(education) {
           </div>
         </div>
       </li>`,
-    )
-    .join('');
-
-  $('#certGrid').innerHTML = certItems
-    .map(
-      (c) => `<span class="rounded-full hairline bg-surface/60 px-3 py-1.5 text-sm text-text-mid">
-        ${c.name ?? c.title ?? c}
-      </span>`,
     )
     .join('');
 }

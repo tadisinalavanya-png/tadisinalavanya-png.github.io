@@ -1,6 +1,5 @@
 {
   "sectionTitle": "Education & Certifications",
-  "certificationsTitle": "Certifications",
   "education": [
     {
       "degree": "Master of Science, Computer and Information Systems",
@@ -20,6 +19,5 @@
       "description": "",
       "logo": "assets/images/logos/vignan.png"
     }
-  ],
-  "certifications": []
+  ]
 }
