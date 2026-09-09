@@ -136,7 +136,7 @@ function featuredCard(p) {
   return `
     <article class="group relative overflow-hidden rounded-2xl hairline bg-surface/60 backdrop-blur transition hover:-translate-y-0.5 hover:border-accent-1/40 reveal">
       <div class="relative h-44 bg-gradient-to-br ${grad}">
-        ${cover ? `<img src="${cover}" alt="${p.title} cover" loading="lazy"
+        ${cover ? `<img src="${cover}" alt="${p.title} cover" decoding="async"
               class="absolute inset-0 h-full w-full object-cover"
               onerror="this.remove()" />` : ''}
         <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent"></div>

@@ -2,111 +2,122 @@
   "sectionTitle": "Featured Projects",
   "projects": [
     {
-      "title": "quasar-scrum",
-      "description": "Educational project for mastering software architecture",
+      "title": "User Story Best Practice",
+      "description": "Reference patterns for writing INVEST user stories and testable acceptance criteria, the core artefacts a BA hands to delivery teams.",
       "technologies": [
-        "Vue",
-        "JavaScript",
-        "HTML",
-        "Sass"
+        "User Stories",
+        "Acceptance Criteria",
+        "Agile"
       ],
-      "icon": "fas fa-globe",
-      "github": "https://github.com/tadisinalavanya-png/quasar-scrum",
-      "demo": "https://github.com/tadisinalavanya-png/quasar-scrum"
-    },
-    {
-      "title": "retail-margin-cockpit",
-      "description": "Modern web application demonstrating clean code principles",
-      "technologies": [
-        "Python",
-        "PLpgSQL",
-        "Dockerfile"
-      ],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/tadisinalavanya-png/retail-margin-cockpit",
-      "demo": "https://github.com/tadisinalavanya-png/retail-margin-cockpit"
-    },
-    {
-      "title": "field-ops-sql-cost-audit",
-      "description": "Full-featured application built as a learning exercise",
-      "technologies": [
-        "Python",
-        "Dockerfile"
-      ],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/tadisinalavanya-png/field-ops-sql-cost-audit",
-      "demo": "https://github.com/tadisinalavanya-png/field-ops-sql-cost-audit"
-    },
-    {
-      "title": "online-payments-fraud-detection-with-machine-learning",
-      "description": "Practice application demonstrating full-stack development skills",
-      "technologies": [
-        "Jupyter Notebook",
-        "HTML",
-        "Python",
-        "CSS"
-      ],
-      "icon": "fas fa-brain",
-      "github": "https://github.com/tadisinalavanya-png/online-payments-fraud-detection-with-machine-learning",
-      "demo": "https://github.com/tadisinalavanya-png/online-payments-fraud-detection-with-machine-learning"
-    },
-    {
-      "title": "etl-validation-with-python-scripting",
-      "description": "Interactive application built for continuous learning",
-      "technologies": [
-        "Python"
-      ],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/tadisinalavanya-png/etl-validation-with-python-scripting",
-      "demo": "https://github.com/tadisinalavanya-png/etl-validation-with-python-scripting"
-    },
-    {
-      "title": "user-story-best-practice",
-      "description": "Personal project for exploring modern development practices",
-      "technologies": [
-        "JavaScript",
-        "SCSS",
-        "HTML",
-        "CSS",
-        "Python",
-        "Ruby",
-        "Shell"
-      ],
-      "icon": "fas fa-brain",
+      "icon": "fas fa-clipboard-list",
       "github": "https://github.com/tadisinalavanya-png/user-story-best-practice",
       "demo": "https://github.com/tadisinalavanya-png/user-story-best-practice"
     },
     {
-      "title": "sales-insights-data-analysis-using-tableau-and-sql",
-      "description": "Portfolio project showcasing development capabilities",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/tadisinalavanya-png/sales-insights-data-analysis-using-tableau-and-sql",
-      "demo": "https://github.com/tadisinalavanya-png/sales-insights-data-analysis-using-tableau-and-sql"
+      "title": "Banking Insights Dashboard",
+      "description": "Power BI dashboard over banking transaction and customer account data, surfacing portfolio KPIs for business stakeholders.",
+      "technologies": [
+        "Power BI",
+        "Excel",
+        "KPI Reporting"
+      ],
+      "icon": "fas fa-chart-column",
+      "github": "https://github.com/tadisinalavanya-png/financial-insights-in-banking-data-using-powerbi",
+      "demo": "https://github.com/tadisinalavanya-png/financial-insights-in-banking-data-using-powerbi"
     },
     {
-      "title": "call-center-performance-analytics-dashboard",
-      "description": "Personal project for exploring modern development practices",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/tadisinalavanya-png/call-center-performance-analytics-dashboard",
-      "demo": "https://github.com/tadisinalavanya-png/call-center-performance-analytics-dashboard"
-    },
-    {
-      "title": "sql-for-financial-data-analysis",
-      "description": "Practice repository for exploring advanced features",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
+      "title": "SQL for Financial Data",
+      "description": "Analytical SQL over financial datasets — aggregation, segmentation, and trend queries behind reporting layers.",
+      "technologies": [
+        "SQL",
+        "Financial Data"
+      ],
+      "icon": "fas fa-database",
       "github": "https://github.com/tadisinalavanya-png/sql-for-financial-data-analysis",
       "demo": "https://github.com/tadisinalavanya-png/sql-for-financial-data-analysis"
     },
     {
-      "title": "financial-insights-in-banking-data-using-powerbi",
-      "description": "Modern web application demonstrating clean code principles",
-      "technologies": [],
-      "icon": "fas fa-project-diagram",
-      "github": "https://github.com/tadisinalavanya-png/financial-insights-in-banking-data-using-powerbi",
-      "demo": "https://github.com/tadisinalavanya-png/financial-insights-in-banking-data-using-powerbi"
+      "title": "ETL Validation & Reconciliation",
+      "description": "Python scripting to validate and reconcile data through ETL stages, catching mismatches before they reach reporting.",
+      "technologies": [
+        "Python",
+        "Data Validation",
+        "ETL"
+      ],
+      "icon": "fas fa-database",
+      "github": "https://github.com/tadisinalavanya-png/etl-validation-with-python-scripting",
+      "demo": "https://github.com/tadisinalavanya-png/etl-validation-with-python-scripting"
+    },
+    {
+      "title": "Payments Fraud Detection",
+      "description": "Analysis of online payment transactions to surface fraud patterns and quantify detection trade-offs.",
+      "technologies": [
+        "Python",
+        "Jupyter",
+        "Analytics"
+      ],
+      "icon": "fas fa-clipboard-list",
+      "github": "https://github.com/tadisinalavanya-png/online-payments-fraud-detection-with-machine-learning",
+      "demo": "https://github.com/tadisinalavanya-png/online-payments-fraud-detection-with-machine-learning"
+    },
+    {
+      "title": "Sales Insights Analysis",
+      "description": "Tableau workbook backed by SQL, turning raw sales records into revenue and regional performance views.",
+      "technologies": [
+        "Tableau",
+        "SQL",
+        "Dashboards"
+      ],
+      "icon": "fas fa-chart-column",
+      "github": "https://github.com/tadisinalavanya-png/sales-insights-data-analysis-using-tableau-and-sql",
+      "demo": "https://github.com/tadisinalavanya-png/sales-insights-data-analysis-using-tableau-and-sql"
+    },
+    {
+      "title": "Field Ops Cost Audit",
+      "description": "Layered SQL with CTEs and window functions auditing field operations cost and SLA performance.",
+      "technologies": [
+        "SQL",
+        "Python",
+        "dbt"
+      ],
+      "icon": "fas fa-database",
+      "github": "https://github.com/tadisinalavanya-png/field-ops-sql-cost-audit",
+      "demo": "https://github.com/tadisinalavanya-png/field-ops-sql-cost-audit"
+    },
+    {
+      "title": "Retail Margin Cockpit",
+      "description": "Dimensional model with a DAX measure library tracking margin, sell-through, and inventory turns.",
+      "technologies": [
+        "dbt",
+        "PLpgSQL",
+        "Python"
+      ],
+      "icon": "fas fa-chart-column",
+      "github": "https://github.com/tadisinalavanya-png/retail-margin-cockpit",
+      "demo": "https://github.com/tadisinalavanya-png/retail-margin-cockpit"
+    },
+    {
+      "title": "Call Centre Performance",
+      "description": "Operational analytics on call centre KPIs — handling time, SLA attainment, and resolution trends.",
+      "technologies": [
+        "Analytics",
+        "KPI Reporting"
+      ],
+      "icon": "fas fa-clipboard-list",
+      "github": "https://github.com/tadisinalavanya-png/call-center-performance-analytics-dashboard",
+      "demo": "https://github.com/tadisinalavanya-png/call-center-performance-analytics-dashboard"
+    },
+    {
+      "title": "Scrum Delivery Board",
+      "description": "Scrum board covering backlog grooming, sprint planning, and delivery tracking workflows.",
+      "technologies": [
+        "Vue",
+        "JavaScript",
+        "Scrum"
+      ],
+      "icon": "fas fa-database",
+      "github": "https://github.com/tadisinalavanya-png/quasar-scrum",
+      "demo": "https://github.com/tadisinalavanya-png/quasar-scrum"
     }
   ]
 }

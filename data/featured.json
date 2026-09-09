@@ -2,91 +2,142 @@
   "sectionTitle": "Featured Projects",
   "items": [
     {
-      "title": "quasar-scrum",
-      "tagline": "Vue · JavaScript · HTML",
-      "description": "Educational project for mastering software architecture",
-      "coverUrl": "",
+      "title": "User Story Best Practice",
+      "tagline": "Requirements · Documentation",
+      "description": "Reference patterns for writing INVEST user stories and testable acceptance criteria, the core artefacts a BA hands to delivery teams.",
+      "coverUrl": "assets/images/covers/user-story-best-practice.svg",
       "stack": [
-        "Vue",
-        "JavaScript",
-        "HTML",
-        "Sass"
+        "User Stories",
+        "Acceptance Criteria",
+        "Agile"
       ],
-      "repo": "https://github.com/tadisinalavanya-png/quasar-scrum",
+      "repo": "https://github.com/tadisinalavanya-png/user-story-best-practice",
       "demo": "",
       "accent": "violet"
     },
     {
-      "title": "retail-margin-cockpit",
-      "tagline": "Python · PLpgSQL · Dockerfile",
-      "description": "Modern web application demonstrating clean code principles",
-      "coverUrl": "",
+      "title": "Banking Insights Dashboard",
+      "tagline": "Power BI · KPI Reporting",
+      "description": "Power BI dashboard over banking transaction and customer account data, surfacing portfolio KPIs for business stakeholders.",
+      "coverUrl": "assets/images/covers/financial-insights-in-banking-data-using-powerbi.svg",
       "stack": [
-        "Python",
-        "PLpgSQL",
-        "Dockerfile"
+        "Power BI",
+        "Excel",
+        "KPI Reporting"
       ],
-      "repo": "https://github.com/tadisinalavanya-png/retail-margin-cockpit",
-      "demo": "",
-      "accent": "cyan"
-    },
-    {
-      "title": "field-ops-sql-cost-audit",
-      "tagline": "Python · Dockerfile",
-      "description": "Full-featured application built as a learning exercise",
-      "coverUrl": "",
-      "stack": [
-        "Python",
-        "Dockerfile"
-      ],
-      "repo": "https://github.com/tadisinalavanya-png/field-ops-sql-cost-audit",
+      "repo": "https://github.com/tadisinalavanya-png/financial-insights-in-banking-data-using-powerbi",
       "demo": "",
       "accent": "fuchsia"
     },
     {
-      "title": "online-payments-fraud-detection-with-machine-learning",
-      "tagline": "Jupyter Notebook · HTML · Python",
-      "description": "Practice application demonstrating full-stack development skills",
-      "coverUrl": "",
+      "title": "SQL for Financial Data",
+      "tagline": "SQL · Transaction Analysis",
+      "description": "Analytical SQL over financial datasets — aggregation, segmentation, and trend queries behind reporting layers.",
+      "coverUrl": "assets/images/covers/sql-for-financial-data-analysis.svg",
       "stack": [
-        "Jupyter Notebook",
-        "HTML",
-        "Python",
-        "CSS"
+        "SQL",
+        "Financial Data"
       ],
-      "repo": "https://github.com/tadisinalavanya-png/online-payments-fraud-detection-with-machine-learning",
+      "repo": "https://github.com/tadisinalavanya-png/sql-for-financial-data-analysis",
       "demo": "",
-      "accent": "violet"
+      "accent": "cyan"
     },
     {
-      "title": "etl-validation-with-python-scripting",
-      "tagline": "Python",
-      "description": "Interactive application built for continuous learning",
-      "coverUrl": "",
+      "title": "ETL Validation & Reconciliation",
+      "tagline": "Python · Data Quality",
+      "description": "Python scripting to validate and reconcile data through ETL stages, catching mismatches before they reach reporting.",
+      "coverUrl": "assets/images/covers/etl-validation-with-python-scripting.svg",
       "stack": [
-        "Python"
+        "Python",
+        "Data Validation",
+        "ETL"
       ],
       "repo": "https://github.com/tadisinalavanya-png/etl-validation-with-python-scripting",
       "demo": "",
       "accent": "cyan"
     },
     {
-      "title": "user-story-best-practice",
-      "tagline": "JavaScript · SCSS · HTML",
-      "description": "Personal project for exploring modern development practices",
-      "coverUrl": "",
+      "title": "Payments Fraud Detection",
+      "tagline": "Python · Fraud Analytics",
+      "description": "Analysis of online payment transactions to surface fraud patterns and quantify detection trade-offs.",
+      "coverUrl": "assets/images/covers/online-payments-fraud-detection-with-machine-learning.svg",
       "stack": [
-        "JavaScript",
-        "SCSS",
-        "HTML",
-        "CSS",
         "Python",
-        "Ruby",
-        "Shell"
+        "Jupyter",
+        "Analytics"
       ],
-      "repo": "https://github.com/tadisinalavanya-png/user-story-best-practice",
+      "repo": "https://github.com/tadisinalavanya-png/online-payments-fraud-detection-with-machine-learning",
+      "demo": "",
+      "accent": "violet"
+    },
+    {
+      "title": "Sales Insights Analysis",
+      "tagline": "Tableau · SQL",
+      "description": "Tableau workbook backed by SQL, turning raw sales records into revenue and regional performance views.",
+      "coverUrl": "assets/images/covers/sales-insights-data-analysis-using-tableau-and-sql.svg",
+      "stack": [
+        "Tableau",
+        "SQL",
+        "Dashboards"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/sales-insights-data-analysis-using-tableau-and-sql",
       "demo": "",
       "accent": "fuchsia"
+    },
+    {
+      "title": "Field Ops Cost Audit",
+      "tagline": "Analytical SQL · dbt",
+      "description": "Layered SQL with CTEs and window functions auditing field operations cost and SLA performance.",
+      "coverUrl": "assets/images/covers/field-ops-sql-cost-audit.svg",
+      "stack": [
+        "SQL",
+        "Python",
+        "dbt"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/field-ops-sql-cost-audit",
+      "demo": "",
+      "accent": "cyan"
+    },
+    {
+      "title": "Retail Margin Cockpit",
+      "tagline": "dbt · DAX · Star Schema",
+      "description": "Dimensional model with a DAX measure library tracking margin, sell-through, and inventory turns.",
+      "coverUrl": "assets/images/covers/retail-margin-cockpit.svg",
+      "stack": [
+        "dbt",
+        "PLpgSQL",
+        "Python"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/retail-margin-cockpit",
+      "demo": "",
+      "accent": "fuchsia"
+    },
+    {
+      "title": "Call Centre Performance",
+      "tagline": "KPIs · SLA Monitoring",
+      "description": "Operational analytics on call centre KPIs — handling time, SLA attainment, and resolution trends.",
+      "coverUrl": "assets/images/covers/call-center-performance-analytics-dashboard.svg",
+      "stack": [
+        "Analytics",
+        "KPI Reporting"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/call-center-performance-analytics-dashboard",
+      "demo": "",
+      "accent": "violet"
+    },
+    {
+      "title": "Scrum Delivery Board",
+      "tagline": "Agile · Backlog Management",
+      "description": "Scrum board covering backlog grooming, sprint planning, and delivery tracking workflows.",
+      "coverUrl": "assets/images/covers/quasar-scrum.svg",
+      "stack": [
+        "Vue",
+        "JavaScript",
+        "Scrum"
+      ],
+      "repo": "https://github.com/tadisinalavanya-png/quasar-scrum",
+      "demo": "",
+      "accent": "cyan"
     }
   ]
 }
